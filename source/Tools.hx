@@ -1,5 +1,5 @@
 package;
-
+#if android
 import flash.system.System;
 import flixel.input.touch.FlxTouch;
 import openfl.events.UncaughtErrorEvent;
@@ -140,3 +140,4 @@ class Tools
 	}
   
 }  
+#end
