@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': Aj Engine" file="PsychEngine" packageName="com.toshi.Ajengine" package="com.shadowmariolol.psychengine" main="Main" version="0.2.8" company="ShadowMario" />
+	<app title="Friday Night Funkin': Aj Engine" file="AjEngine" packageName="com.toshi.Ajengine" package="com.shadowmariolol.psychengine" main="Main" version="0.2.8" company="ShadowMario" />
         <app file="AjWINDOWS" if="windows" />
 	<app file="AjAPP" if="linux" />
 	<app file="AjMAC" if="mac" />
