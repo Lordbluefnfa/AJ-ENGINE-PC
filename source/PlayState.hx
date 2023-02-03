@@ -892,6 +892,7 @@ class PlayState extends MusicBeatState
 				}
 			}
 		}
+		#end		
 		// STAGE SCRIPTS
 		#if (MODS_ALLOWED && LUA_ALLOWED)
 		startLuasOnFolder('stages/' + curStage + '.lua');
