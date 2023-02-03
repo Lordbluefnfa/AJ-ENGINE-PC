@@ -94,14 +94,14 @@ class Song
 		var formattedSong:String = Paths.formatToSongPath(jsonInput);
 		
 		var moddyFile:String = Paths.modsJson(formattedFolder + '/' + formattedSong);
-		if(Tools.exists(moddyFile)) {
-			rawJson = Tools.getContent(moddyFile).trim();
+		if(FileSystem.exists(moddyFile)) {
+			rawJson = File.getContent(moddyFile).trim();
 		}
 		
 
 		if(rawJson == null) {
-			#if android 
-			rawJson = Tools.getContent(Paths.json(formattedFolder + '/' + formattedSong)).trim();
+			#if sys 
+			rawJson = File.getContent(Paths.json(formattedFolder + '/' + formattedSong)).trim();
 			#else
 			rawJson = Assets.getText(Paths.json(formattedFolder + '/' + formattedSong)).trim();
 			#end
