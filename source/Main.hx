@@ -48,8 +48,7 @@ class Main extends Sprite
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 	
-	public static var path:String = System.applicationStorageDirectory;
-
+	
 	public static function main():Void
 	{
 		Lib.current.addChild(new Main());
@@ -136,7 +135,7 @@ class Main extends Sprite
 		dateNow = dateNow.replace(" ", "_");
 		dateNow = dateNow.replace(":", "'");
 
-		path = Main.path + "./crash/" + "AjEngine_" + dateNow + ".txt";
+		path = "./crash/" + "AjEngine_" + dateNow + ".txt";
 
 		for (stackItem in callStack)
 		{
@@ -151,8 +150,8 @@ class Main extends Sprite
 
 		errMsg += "\nUncaught Error: " + e.error + "\n> Crash Handler written by: sqirra-rng";
 
-		if (!OpenFlAssets.exists("./crash/"))
-			FileSystem.createDirectory(Main.path + "./crash/");
+		if (!FileSystem.exists("./crash/"))
+			FileSystem.createDirectory("./crash/");
 
 		File.saveContent(path, errMsg + "\n");
 
