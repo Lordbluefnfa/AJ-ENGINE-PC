@@ -1,0 +1,57 @@
+{
+	"songs": [
+		[
+			"Pico",
+			"pico",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Philly Nice",
+			"pico",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Blammed",
+			"pico",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Infernal",
+			"pico",
+			[
+				255,
+				255,
+				255
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "philly",
+	"weekCharacters": [
+		"vidromenu",
+		"toshimenu",
+		"boshimenu"
+	],
+	"storyName": "Cuidado: Luzes Piscantes",
+	"weekName": "pico madness",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}
