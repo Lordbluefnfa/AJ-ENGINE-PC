@@ -1,4 +1,4 @@
-#if FEATURE_DISCORD_RPC //only works on desktop (mac linux windows)
+#if desktop //only works on desktop (mac linux windows)
 package;
 
 import Sys.sleep;
