@@ -185,14 +185,11 @@ class Paths
 	{
 		return getPath('shaders/$key.vert', TEXT, library);
 	}
+	
 	inline static public function lua(key:String, ?library:String)
 	{
-		return Main.path + getPath('$key.lua', TEXT, library);
-	}
-	inline static public function luaAsset(key:String, ?library:String)
-        {
 		return getPath('$key.lua', TEXT, library);
-        }
+	}
 
 	static public function video(key:String)
 	{
@@ -325,7 +322,7 @@ class Paths
 		#if MODS_ALLOWED
 		var imageLoaded:FlxGraphic = returnGraphic(key);
 		var txtExists:Bool = false;
-		if(Tools.exists(modsTxt(key))) {
+		if(FileSystem.exists(modsTxt(key))) {
 			txtExists = true;
 		}
 
